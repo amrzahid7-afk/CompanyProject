@@ -8,4 +8,21 @@ use Illuminate\Database\Eloquent\Model;
 class {{ class }} extends Model
 {
     use HasFactory;
+
+    protected $table = "" ;
+    protected $primaryKey = "id" ;
+    protected $keyType = integer ;
+    public $incrementing = true ;
+    public $timestamps = true ;
+    protected $guarded = ['id] ;
+    protected $casts = [
+         // 'status' => Status::class
+    ]
+    
+    ##-------------------------Realtions
+    ##-------------------------Attributes
+    ##-------------------------Custom Functions
+    ##-------------------------Scops
+    ##-------------------------Accessors & Mutators
+
 }
